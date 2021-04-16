@@ -1,0 +1,497 @@
+/*archivo css*/
+
+* {
+	margin: 0; padding: 0
+}
+
+body {font-size: 10px;
+	font-family: 'Ubuntu', sans-serif;
+	background-color: white; 
+	height: 600px;
+	display: grid;
+
+}
+
+
+.grids {     display: grid;
+	grid-gap: 10px; 
+	grid-template-areas:"header header"
+	"nav nav"
+	"main main"
+	"footer footer";
+	grid-template-rows: 100px 40px auto 10px; 
+
+}
+
+
+
+
+header	{
+	background-color: white;
+	width: 100%;
+	height:15vh;
+	font-weight: 700;
+	grid-area: header;
+	display: inline-block;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+
+}
+
+header img {
+	width: 80px;
+	height:60px;
+}
+
+h1		{font-size: 30px;
+	letter-spacing: 2px;
+	color: black;
+	text-transform: uppercase;
+	align-items: center;
+	font-family: 'montserrat';
+	font-weight: 200;
+	font-size: 50px;
+}
+
+nav	{
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	text-align: center;
+	grid-area: nav;
+	width: 100%;
+	height: 100%;
+	margin-top: 30px;
+	background-image: radial-gradient(#F3ECDC, white);
+
+}
+
+ul li { 
+	display: inline-block;
+	width: 15%;
+	position:relative;
+	text-align: center;
+
+}
+
+nav ul li 
+{ 
+	font-size: 15px;
+
+
+}
+
+section ul li
+{ 
+	font-size: 10px;
+
+
+
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	text-align: center;
+}
+
+a:hover{
+	transition: 0s;
+	font-size: 1.2rem;
+}
+
+ul ul						 {
+	position: absolute;
+	display: none;
+	background-color: none;
+
+
+}
+
+ul ul li					 {
+	display: block;
+	background-color: none;
+	width: auto;
+	margin: 10px;
+	padding: 5px;
+	font-size: 12px;
+	margin-left: 25px;
+
+}
+
+ul ul li a {
+	text-decoration: none;
+	color: black;
+
+
+}
+
+ul li:hover ul
+{
+	display:block;
+	margin-left: 50px;
+
+
+}
+
+main {
+	margin-top: 20px;
+	margin-bottom: 5px;
+	justify-content: center;
+	background-color: white;
+	color: black;
+	padding: 10px;
+	width: 100%;
+	flex-wrap: nowrap;
+	grid-area: main;
+}
+
+h2	{
+	text-transform: uppercase;
+	margin: 20px;
+	margin-bottom: 40px;
+	padding-bottom: 2px;
+	font-size: 20px;
+	text-align: left;
+	flex-wrap: wrap;
+	text-decoration: underline;
+	letter-spacing: 2px;
+
+}
+
+.fotoEncabezado
+{  
+	width: 600px;
+	height: 300px;
+	display: block;
+	padding: 40px;
+	border-radius: 50px;
+
+}
+
+.agrandar
+{  
+	width: 100%;
+	transition: all 2s;
+}
+
+
+.carruselFotos
+{  
+	width: 100px;
+	height: auto;
+}
+
+
+
+.agrandar:focus{
+	width: 200px;
+	font-size: 1.2rem;
+
+}
+
+article img {  
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+	padding: 40px;
+	border-radius: 50px;
+
+
+
+
+				/*align-items: flex-start;
+				flex-direction: column;
+				flex-wrap: nowrap;
+				flex: content
+				flex-basis: 0px;
+				flex-grow: 0px;
+				flex-shrink: 1px;*/
+			}
+			.mapa{  
+				width: 500px;
+				height: 300px;
+				display: inline-block;
+				padding: 40px;
+				border-radius: 50px;
+				float: right;	
+				margin-right: 250px;			
+				margin-top: -340px;
+			}
+
+			article ol li
+			{display: block;
+				border: 0px;
+				padding: 10px;
+				font-size: 15px;
+				opacity: 80%;
+				width: 330px;
+				height: 30px;
+				justify-content: center;
+				align-items: center;
+				text-align: left;
+				margin: 25px;
+				margin-left: -55%;
+				color: black;
+				padding-top: 30px;
+			}
+
+			.bordes
+			{		background-image: radial-gradient(white,#F3ECDC);
+
+				height: 300px;
+				width: 60%;
+				border-radius: 10px;
+
+			}
+
+			.video				{
+				margin-top: 80px;
+				width="500" height="500" 
+			}
+
+			span
+			{text-decoration: underline;
+			}
+
+
+
+			article ul li {
+				display: inline;
+				border: solid 1px white;
+				padding: 5px;
+				font-size: 15px;
+				background-color: #F3ECDC;
+				width: 110px;
+				height: 15px;
+				justify-content: center;
+				border-style: dotted;
+				align-items: center;
+				text-align: center;
+				margin: 25px;
+
+			}
+
+
+
+			article li a
+			{color: black;
+				margin: 10px;}
+
+				div {
+					height: 3vh;
+					display: flex;
+					margin-top: 20px;}
+
+					button img	 {
+
+						padding: 0px;
+						margin: 0px;
+						width: 15px;
+						height: 15px;
+					}
+
+					button 	 {
+						padding: 0px;
+						margin: 0px;
+						width: 150px;
+						height: 150px;	
+						margin-left: 10px;
+						justify-content: center;
+						align-items: center;
+						margin-top: 43px;}
+
+
+						footer	 {
+							color: white;
+							clear: both;
+							padding: 10px;
+							width: 100%;
+							justify-content: center;
+							align-items: center;
+							height: 2vh;
+							grid-area: footer;
+							background-image:linear-gradient(white, #B7686B);
+						}
+
+						h3	{
+							text-transform: uppercase;
+							text-align: center;
+							margin-top: 40px;
+							font-size: 20px;
+							letter-spacing: 4px;
+
+						}	
+
+
+
+
+
+
+
+
+
+.quieroDecorar						{	width: 50%;
+						}	
+textarea{	width: 70%;
+	text-align: center;
+						}	
+
+.contanos						{	margin: 10px;
+						}	
+
+						.newsletter						
+						{	padding: 0px;
+							color: black;
+							width: 100%;
+
+						}	
+
+	.siOno						
+						{	padding: 0px;
+							color: black;
+							width: 100%;
+							text-decoration: none;
+
+						}	
+
+						 label	{
+							padding: 10px;
+							text-transform: uppercase;
+							display: grid;
+							font-size: 15px;
+							color: white;
+							width: 30vh;
+							height: 10px;
+							text-decoration: underline;
+							justify-content: center;
+							align-items: center;
+							align-content: center;
+
+						}							
+
+						div input {
+							padding: 5px;
+							margin: 10px;
+							font-size: 10px;
+							height: 20%;
+							width: 10%;
+							margin-top: 50px;
+						transition: none;
+
+
+						}
+						form input
+{
+							padding: 5px;
+							margin: 10px;
+							font-size: 10px;
+							height: 20%;
+							width: 50%;
+							display: grid;
+							justify-content: center;
+							align-items: center;
+							align-content: center;
+							text-align: center;	
+							transition: none;
+						
+						}
+						form{
+    display: grid;
+    width: 600px;
+    margin: 1px;
+    padding: 5px;
+    font-size: 15px;
+							background-image:linear-gradient(#B7686B, white);
+    color: black;
+}
+
+		
+						select {
+							margin: 20px;
+						}
+
+						table {
+
+							border: 0px solid;
+							border-radius: 10px;
+							margin: 20px;
+							padding: 10px;
+							background-image:linear-gradient(#B7686B, white);
+
+
+						}
+ }
+
+						th {
+							border: 0px solid;
+							color: white;
+							width: 150px;
+							height: 40px;
+							font-size: 20px;
+							letter-spacing: 2px;
+
+
+						}
+
+
+						tr, td {
+							border: 0px solid;
+							color: black;
+							text-align: center;
+							font-size: 15px;
+							padding: 5px;
+							border-bottom: 1px solid white;
+						}
+
+
+
+
+						article p {
+							font-size: 15px;
+							margin: 10px;
+
+						}
+
+						fieldset {
+							border: 2px solid #B7686B;
+							width: 400px;
+							margin: 10px;
+							display: inline;
+							border-radius: 10px;
+
+						}
+
+
+						.contacto  {
+							margin-right: 20px;
+							margin-top: -20px;
+							font-size: 10px;
+							line-height: 30px;
+							color: black;
+							border: solid white 2px;
+							padding: 10px;
+							margin-left: 0px;
+							margin-bottom: 0px;
+							display: flex;
+							float: right;
+						}
+
+
+						@media screen and (min-width:780px) and (max-width: 1200px){
+							body{
+								background-color: white;
+							}
+						}
+						@media screen and (min-width:480px) and (max-width:780px){
+							body{
+								background-color: white;
+							}
+						}
+						@media screen and (max-width: 480px)
+						{
+							body{
+								background-color: white;}
+							}
+
